@@ -1,0 +1,113 @@
+:root {
+  --cell-width: 40px;
+  --cell-height: 25px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #bbb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.valid {
+  border-color: green;
+  background-color: rgb(152, 231, 152);
+}
+
+.invalid {
+  border-color: red;
+  background-color: rgb(231, 173, 173);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.cell {
+  position: relative;
+  background-color: #fff;
+  width: var(--cell-width);
+  height: var(--cell-height);
+}
+
+.card {
+  width: var(--cell-width);
+  height: var(--cell-height);
+  position: absolute;
+  z-index: 99;
+}
+
+.mir {
+  background: url('../img/mir.png');
+}
+
+.visa {
+  background: url('../img/visa.png');
+}
+
+.mastercard {
+  background: url('../img/mastercard.png');
+}
+
+.amex {
+  background: url('../img/amexp.png');
+}
+
+.discover {
+  background: url('../img/discover.png');
+}
+
+.jcb {
+  background: url('../img/jcb.png');
+}
+
+.diners {
+  background: url('../img/diners.png');
+}
+
+.mir-no {
+  background: url('../img/mir-no.png');
+}
+
+.visa-no {
+  background: url('../img/visa-no.png');
+}
+
+.mastercard-no {
+  background: url('../img/mastercard-no.png');
+}
+
+.amex-no {
+  background: url('../img/amexp-no.png');
+}
+
+.discover-no {
+  background: url('../img/discover-no.png');
+}
+
+.jcb-no {
+  background: url('../img/jcb-no.png');
+}
+
+.diners-no {
+  background: url('../img/diners-no.png');
+}
+
+.card-form-widget {
+  margin: 20px;
+}

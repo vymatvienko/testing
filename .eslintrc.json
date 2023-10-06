@@ -1,0 +1,38 @@
+// {
+//   "extends": "airbnb-base",
+//   "env": {
+//     "es6": true,
+//     "browser": true,
+//     "jest/globals": true
+//   },
+//   "parserOptions": {
+//     "sourceType": "module"
+//   },
+//   "rules": {
+//     "no-unused-vars": "warn"
+//   },
+//   "overrides": [
+//     {
+//       "files": ["**/*.test.js"],
+//       "plugins": ["jest"],
+//       "extends": ["plugin:jest/recommended"],
+//       "rules": { "jest/prefer-expect-assertions": "off" }
+//     }
+//   ]
+// }
+
+{
+  "extends": "airbnb-base",
+  "env": {
+     "es6": true,
+     "browser": true,
+     "jest": true
+  },
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+    ]
+  }
+}
